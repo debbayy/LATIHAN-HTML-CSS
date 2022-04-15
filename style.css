@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "roboto";
+  src: url("/assets/roboto.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "roboto";
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+  flex: 40%;
+  height: 100vh;
+}
+
+.content {
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.info {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  animation: fadeInTopDown ease 1s;
+  -webkit-animation: fadeInTopDown ease 1s;
+}
+
+.detilinfo {
+  margin: auto;
+  padding: 5px;
+}
+
+a {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(104, 100, 100);
+}
+
+h1 {
+  text-align: center;
+  animation: fadeInLeftRight ease 1s;
+  -webkit-animation: fadeInLeftRight ease 1s;
+}
+
+.img {
+  text-align: center;
+}
+
+img {
+  text-align: center;
+  max-height: 250px;
+  animation: fadeInTopDown ease 1s;
+  -webkit-animation: fadeInTopDown ease 1s;
+}
+
+img:hover {
+  transform: scale(110%);
+  transition: 200ms;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+p {
+  animation: fadeInLeftRight ease 1s;
+  -webkit-animation: fadeInLeftRight ease 1s;
+}
+
+p:hover {
+  color: rgb(104, 100, 100);
+}
+
+.rightside {
+  display: flex;
+  flex: 60%;
+  height: 100vh;
+  animation: animateBg 9s linear infinite;
+  background-image: linear-gradient(45deg,#ff0000,#ff8000,#db57ca,#ff0000,#ff8000);
+  background-size: 100% 400%;
+}
+
+.card {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  border-radius: 15px;
+  padding: 5% 5%;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: white;
+  animation: fadeInTopDown ease 1s;
+  -webkit-animation: fadeInTopDown ease 1s;
+}
+
+.input {
+  
+  width: 100%;
+  height: 1.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: solid 0.5px;
+}
+
+input:focus {
+  outline: solid 2px salmon;
+  border: none;
+}
+
+select {
+  height: 1.75rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: solid 0.5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 50%;
+}
+
+.birthday {
+  min-width: 70%;
+  max-width: 100%;
+  padding-left: 5px;
+  height: 1.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: solid 0.5px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+textarea:focus {
+  outline: solid 2px salmon;
+  border: none;
+}
+
+button {
+  height: 2rem;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  color: white;
+  background-color:blue;
+}
+
+button:hover {
+  color: blue;
+  background-color: white;
+  border: solid 1px blue;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+}
+
